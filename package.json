@@ -1,0 +1,62 @@
+{
+	"name": "object-to-archy",
+	"version": "0.0.0",
+	"description": "Convert object to archy object format",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/rjoydip/object-to-archy.git"
+	},
+	"author": {
+		"name": "Joydip Roy",
+		"email": "joydipand@gmail.com",
+		"url": "https://github.com/rjoydip"
+	},
+	"bin": {
+		"object-to-archy": "cli.js"
+	},
+	"engines": {
+		"node": ">=6"
+	},
+	"scripts": {
+		"lint": "xo",
+		"test": "nyc ava",
+		"precommit": "npm run lint",
+		"prepush": "npm test && npm run lint"
+	},
+	"xo": {
+		"space": 2,
+		"rules": {
+			"capitalized-comments": 0
+		}
+	},
+	"files": [
+		"index.js",
+		"cli.js"
+	],
+	"keywords": [
+		"cli-app",
+		"cli"
+	],
+	"dependencies": {
+		"meow": "^5.0.0"
+	},
+	"devDependencies": {
+		"archy": "^1.0.0",
+		"ava": "^0.25.0",
+		"husky": "^0.14.3",
+		"nyc": "^12.0.0",
+		"xo": "^0.21.0"
+	},
+	"bugs": {
+		"url": "https://github.com/rjoydip/object-to-archy/issues"
+	},
+	"readme": "ERROR: No README data found!",
+	"homepage": "https://github.com/rjoydip/object-to-archy#readme",
+	"husky": {
+		"hooks": {
+			"pre-commit": "npm run precommit",
+			"pre-push": "npm run prepush"
+		}
+	}
+}
