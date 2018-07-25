@@ -12,9 +12,6 @@
 		"email": "joydipand@gmail.com",
 		"url": "https://github.com/rjoydip"
 	},
-	"bin": {
-		"object-to-archy": "cli.js"
-	},
 	"engines": {
 		"node": ">=6"
 	},
